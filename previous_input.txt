@@ -1,0 +1,12 @@
+-it \
+--privileged \
+-e DISPLAY=$DISPLAY \
+--env="QT_X11_NO_MITSHM=1" \
+-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+-v /home/$USER/docker_mounted/cuda10.1/:/root/mounted_folder/ \
+-v /home/$USER/.config/terminator/config:/root/.config/terminator/config \
+--hostname hy \
+--network host \
+--gpus all \
+--ipc=host \
+--name cuda11.8_cudnn8_ubuntu22.04
