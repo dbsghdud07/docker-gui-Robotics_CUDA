@@ -6,6 +6,7 @@
 
 ```bash
 pip install PyQt5
+sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 ```
 
 Make sure that docker command available without sudo and nvidia-docker installed
